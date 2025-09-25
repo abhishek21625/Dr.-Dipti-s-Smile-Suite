@@ -7,12 +7,13 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
    <link rel="stylesheet" href="Style.css" />
    <title>
       Dr. Dipti's Smile Suite | Best Dental Clinic in Faridabad | Best Dentist
@@ -21,25 +22,18 @@
 </head>
 
 <body>
-
-   <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-         <!-- Logo -->
+   <nav class="navbar-expand-lg">
+      <div class="container navbar">
          <a class="navbar-brand" href="index.html">
-            <img src="images/imgi_1_logo-nobg.png" alt="Logo" />
+            <img src="images/imgi_1_logo-nobg.png" alt="Logo" class="logo" />
          </a>
 
-         <!-- Toggler -->
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
          </button>
 
-         <!-- Nav Links -->
          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-               <!-- <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-               </li> -->
+            <ul class="navbar-nav gap-3">
                <li class="nav-item">
                   <a class="nav-link" href="#services">Services</a>
                </li>
@@ -56,28 +50,84 @@
                   <a class="nav-link" href="#gallery">Gallery</a>
                </li>
             </ul>
-            <a href="#" class="btn btn-book rounded-3 ms-lg-3">Book Now</a>
          </div>
+         <a href="#" class="btn rounded-3 ms-lg-3">Book Now</a>
       </div>
    </nav>
 
    <section class="hero-section" id="hero-section">
       <div class="overlay"></div>
       <div class="description">
-         <div class="row">
+         <div class="row align-items-center">
+
             <div class="col-md-6 order-2 order-md-1 justify-content-center">
-               <div class="text1 font-weight-bold">
-                  One Step Closer to your Confidence Smile
+               <div class="row align-items-center justify-content-center">
+                  <div class="col-3">
+                     <div class="hero-logo">
+                        <img src="images/hero logo.png" alt="" class="">
+                     </div>
+                  </div>
+
+                  <div class="col-9">
+                     <h3>We are one of the top-listed Invisalign providers in Faridabad</h3>
+                  </div>
                </div>
-               <!-- <div class="text2">All dentals service under one roof</div> -->
-               <div class="text3">
-                  Painless & Stress-Free Treatments<br />
-                  Modern Tech & Gentle Approach<br />
-                  All Dental Services Under One Roof<br />
-                  From Kids to Grandparents, One Clinic For All<br />
+
+               <div class="text1 font-weight-bold mb-4">
+                  One Step Closer to your Confident Smile
                </div>
+
+               <div class="stats-section mt-4">
+                  <div class="row text-center">
+                     <div class="col-4">
+
+                        <div class="stat-box">
+                           <div class="why-choose-icon text-md-center">
+                              <img src="images/icons/experience.png"
+                                 alt="Dr Dipti Smile Suite | Advanced Dental Technology"
+                                 title="Advanced Dental Technology" />
+                           </div>
+                           <h2 class="text-orange fw-bold">
+                              <span class="count" data-target="10">0+</span>
+                           </h2>
+                           <p class="mb-0">Years Of Experience</p>
+                        </div>
+                     </div>
+
+                     <div class="col-4">
+                        <div class="stat-box">
+                           <div class="why-choose-icon text-md-center">
+                              <img src="images/icons/trusted patients.png"
+                                 alt="Dr Dipti Smile Suite | Advanced Dental Technology"
+                                 title="Advanced Dental Technology" />
+                           </div>
+                           <h2 class="text-orange fw-bold">
+                              <span class="count" data-target="8000">0+</span>
+                           </h2>
+                           <p class="mb-0">Trusted Patients</p>
+                        </div>
+                     </div>
+
+                     <div class="col-4">
+                        <div class="stat-box">
+                           <div class="why-choose-icon text-md-center">
+                              <img src="images/icons/rating.png" alt="Dr Dipti Smile Suite | Advanced Dental Technology"
+                                 title="Advanced Dental Technology" />
+                           </div>
+                           <h2 class="text-orange fw-bold">
+                              <span class="count" data-target="5">0</span>
+                           </h2>
+                           <p class="mb-0">Star Ratings On Google</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- End Stats -->
+
             </div>
 
+            <!-- RIGHT SIDE: Form -->
             <div class="col-md-6 order-1 order-md-2">
                <div class="form-container">
                   <h3>Let Us Take Care Of Your Smile</h3>
@@ -96,21 +146,17 @@
 
                      <div class="form-group">
                         <i class="fa fa-calendar"></i>
-                        <!-- <input type="date" name="date" id="date" required /> -->
                         <input placeholder="Book Your Slots" type="text" onfocus="(this.type='date')"
-                           onblur="(this.type='text')"   id="date" />
+                           onblur="(this.type='text')" id="date" />
                      </div>
 
                      <div class="form-group custom-dropdown">
-                        <!-- <i class="fa fa-list"></i> -->
                         <div class="dropdown-selected">What are you looking for?</div>
                         <ul class="dropdown-list">
                            <li data-value="shape">Change in shape</li>
                            <li data-value="alignment">Change in alignment</li>
                            <li data-value="shade">Change in shade</li>
-                           <li data-value="replacement">
-                              Replacement of missing tooth
-                           </li>
+                           <li data-value="replacement">Replacement of missing tooth</li>
                            <li data-value="new_set">New set of all teeth</li>
                            <li data-value="smile_makeover">Complete smile makeover</li>
                         </ul>
@@ -125,159 +171,158 @@
       </div>
    </section>
 
-   <section class="why-choose mt-5 mb-5">
+   <section class="why-choose mt-5 mb-5" id="gallery">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-5">
-               <div class="why-choose-content pb-5 rounded-3">
-                  <div class="why-choose-head p-4 text-center">
-                     <h2>Why Choose Smile Suite ?</h2>
-                  </div>
-                  <div class="why-choose-box">
-                     <div class="row justify-content-center">
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon  pb-md-3">
-                                 <img src="images/advanced-dental-technology.webp"
-                                    alt="Dr Dipti Smile Suite | Advanced Dental Technology"
-                                    title="Advanced Dental Technology" />
-                              </div>
-                              <div class="why-choose-para text-center pb-md-3">
-                                 <p>Advanced Dental Technology</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-md-center pb-md-3">
-                                 <img src="images/internationally.webp"
-                                    alt="Dr Dipti Smile Suite | Strict Sterilization Protocols"
-                                    title="Strict Sterilization Protocols" />
-                              </div>
-                              <div class="why-choose-para text-center pb-md-3">
-                                 <p>Strict Sterilization Protocols</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-md-center pb-md-3">
-                                 <img src="images/happy-patients.webp"
-                                    alt="Dr Dipti Smile Suite | Patient Centered Approach"
-                                    title="Patient Centered Approach" />
-                              </div>
-                              <div class="why-choose-para text-center">
-                                 <p class="pb-md-3">Patient Centered Approach</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-md-center pb-md-3">
-                                 <img src="images/in-house-digital-dental.webp"
-                                    alt="Dr Dipti Smile Suite | Unparalleled Team of Dental Specialists"
-                                    title="Unparalleled Team of Dental Specialists" />
-                              </div>
-                              <div class="why-choose-para text-center">
-                                 <p class="pb-md-3">
-                                    Unparalleled Team of Dental Specialists
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-md-center pb-md-3">
-                                 <img src="images/icons/experience.png"
-                                    alt="Dr Dipti Smile Suite | Advanced Dental Technology"
-                                    title="Advanced Dental Technology" />
-                              </div>
-                              <div class="why-choose-para text-center pb-md-3">
-                                 <p>10+ Years Of Experience</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-center pb-md-3">
-                                 <img src="images/icons/trusted patients.png"
-                                    alt="Dr Dipti Smile Suite | Advanced Dental Technology"
-                                    title="Advanced Dental Technology" />
-                              </div>
-                              <div class="why-choose-para text-center">
-                                 <p>8000+ Trusted Patients</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-center pb-md-3">
-                                 <img src="images/icons/earth.png"
-                                    alt="Dr Dipti Smile Suite | Advanced Dental Technology"
-                                    title="Advanced Dental Technology" />
-                              </div>
-                              <div class="why-choose-para text-center">
-                                 <p>Treated Patients from Multiple Countries Across The Globe</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-6 col-md-6 mb-1">
-                           <div class="why-choose-card">
-                              <div class="why-choose-icon text-center pb-md-3">
-                                 <img src="images/icons/rating.png"
-                                    alt="Dr Dipti Smile Suite | Advanced Dental Technology"
-                                    title="Advanced Dental Technology" />
-                              </div>
-                              <div class="why-choose-para text-center">
-                                 <p>5 Star Ratings on Google</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+         <div class="why-choose-head pb-5 text-center">
+            <h2>Our Gallery</h2>
+         </div>
 
-            <div class="col-lg-7">
-               <div class="slider-card" id="gallery">
-                  <div class="slider-move">
-                     <div>
-                        <div class="slider-image">
-                           <img src="images/gallery/drdipti-gallery2.webp"
-                              alt="Dr Dipti Smile Suite | Root Canal Treatment" title="Root Canal Treatment" />
-                        </div>
-                     </div>
-                     <div>
-                        <div class="slider-image">
-                           <img src="images/gallery/drdipti-gallery15.webp" alt="Dr Dipti Smile Suite | Dental Chair"
-                              title="Dental Chair" />
-                        </div>
-                     </div>
-                     <div>
-                        <div class="slider-image">
-                           <img src="images/gallery/drdipti-gallery9.webp"
-                              alt="Dr Dipti Smile Suite | Ceilling Mounted Set up" title="Ceilling Mounted Set up" />
-                        </div>
-                     </div>
-                     <div>
-                        <div class="slider-image">
-                           <img src="images/gallery/drdipti-gallery3.webp"
-                              alt="Dr Dipti Smile Suite | Surgical Equipments and Medical Devices"
-                              title="Surgical Equipments and Medical Devices" />
-                        </div>
-                     </div>
-                     <div>
-                        <div class="slider-image">
-                           <img src="images/gallery/drdipti-gallery11.webp"
-                              alt="Dr Dipti Smile Suite | Dental Clinic Interior" title="Dental Clinic Interior" />
-                        </div>
-                     </div>
+         <div class="slider-card">
+            <div class="slider-move">
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/gallery/drdipti-gallery2.webp" data-fancybox="gallery"
+                        data-caption="Root Canal Treatment">
+                        <img src="images/gallery/drdipti-gallery2.webp"
+                           alt="Dr Dipti Smile Suite | Root Canal Treatment" title="Root Canal Treatment" />
+                     </a>
                   </div>
                </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/gallery/drdipti-gallery15.webp" data-fancybox="gallery"
+                        data-caption="Dental Chair">
+                        <img src="images/gallery/drdipti-gallery15.webp" alt="Dr Dipti Smile Suite | Dental Chair"
+                           title="Dental Chair" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/gallery/drdipti-gallery9.webp" data-fancybox="gallery"
+                        data-caption="Ceiling Mounted Set up">
+                        <img src="images/gallery/drdipti-gallery9.webp"
+                           alt="Dr Dipti Smile Suite | Ceilling Mounted Set up" title="Ceilling Mounted Set up" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/gallery/drdipti-gallery3.webp" data-fancybox="gallery"
+                        data-caption="Surgical Equipments and Medical Devices">
+                        <img src="images/gallery/drdipti-gallery3.webp"
+                           alt="Dr Dipti Smile Suite | Surgical Equipments and Medical Devices"
+                           title="Surgical Equipments and Medical Devices" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/gallery/drdipti-gallery11.webp" data-fancybox="gallery"
+                        data-caption="Dental Clinic Interior">
+                        <img src="images/gallery/drdipti-gallery11.webp"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" title="Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <!-- <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.16_2f98cdf1.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.16_2f98cdf1.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div> -->
+
+               <!-- <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.16_36cf41b2.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.16_36cf41b2.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div> -->
+
+               <!-- <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.17_2c4df101.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.17_2c4df101.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div> -->
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.18_b6dcb04e.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.18_b6dcb04e.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <!-- <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.19_4316bab1.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.19_4316bab1.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div> -->
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/WhatsApp Image 2025-09-25 at 17.42.19_412142d6.jpg" data-fancybox="gallery">
+                        <img src="images/WhatsApp Image 2025-09-25 at 17.42.19_412142d6.jpg"
+                           alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/_MG_6146.JPG" data-fancybox="gallery">
+                        <img src="images/_MG_6146.JPG" alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/_MG_6155 01.jpg" data-fancybox="gallery">
+                        <img src="images/_MG_6155 01.jpg" alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="slider-image">
+                     <a href="images/_MG_6181.JPG" data-fancybox="gallery">
+                        <img src="images/_MG_6181.JPG" alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div>
+
+               <!-- <div>
+                  <div class="slider-image">
+                     <a href="images/_MG_6188.JPG" data-fancybox="gallery">
+                        <img src="images/_MG_6188.JPG" alt="Dr Dipti Smile Suite | Dental Clinic Interior" />
+                     </a>
+                  </div>
+               </div> -->
+
             </div>
          </div>
+
       </div>
-   </section>  
+      </div>
+   </section>
 
    <!-- <section class="section" id="about">
       <div class="container">
@@ -309,56 +354,79 @@
 
    <section>
       <div class="container">
-         <div class="row align-items-center">
+         <div class="flow-list">
 
-            <div class="col-md-6">
-               <img src="images/pexels-olly-789822.jpg" class="img-fluid rounded shadow mb-4" alt="Smile Simulation">
-               <p>All the lab work is being done by Asia’s no. 1 Dental Lab because at Dr. Dipti's Smile Suite , we
-                  believe
-                  that our patients deserve nothing less than the best. All the crowns come with a minimum 10 years
-                  warranty to provide hassle free follow ups. </p>
+            <div class="why-choose-head pb-5 text-center">
+               <h2>Why Choose Dr. Dipti's Smile Suite ?</h2>
             </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <img src="images/pexels-olly-789822.jpg" class="img-fluid rounded shadow mb-4"
+                     alt="Smile Simulation" />
+                  <p>
+                     At <strong>Dr. Dipti's Smile Suite</strong>, we believe that every patient deserves nothing less
+                     than the finest in
+                     dental care. That’s why all our lab work is carried out exclusively by <strong>Asia’s No. 1 Dental
+                        Lab</strong>,
+                     ensuring unmatched precision, superior aesthetics, and long-lasting durability. Every crown we
+                     provide
+                     comes with a minimum <strong>10-year warranty</strong>, giving you complete peace of mind and the
+                     confidence that your
+                     smile is in safe hands. With this assurance, our patients enjoy hassle-free follow-ups and the
+                     satisfaction of knowing their treatment is supported by the very best technology and craftsmanship
+                     in
+                     dentistry.
+                  </p>
+               </div>
 
-            <div class="col-md-6">
-               <div class="dream-smile">
-                  <h6 class="text-muted">Get A Peek of</h6>
-                  <h2>"Your Dream Smile"</h2>
-                  <h5>With Our Latest Smile Simulation software</h5>
+               <div class="col-md-6">
+                  <div class="dream-smile">
+                     <h6 class="text-muted">Get A Peek of</h6>
+                     <h2>"Your Dream Smile"</h2>
+                     <!-- <h5>With Our Latest Smile Simulation software</h5> -->
 
-                  <div class="service-box">
-                     <i class="bi bi-upc-scan"></i>
-                     <span>Best in class chairside iTero scanner</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-capsule"></i>
-                     <span>Digital implant planning</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-activity"></i>
-                     <span>Latest smile simulation technology</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-heart-pulse"></i>
-                     <span>Advanced dental equipments</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-brightness-high"></i>
-                     <span>Luxurious and ergonomic dental chairs</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-emoji-smile"></i>
-                     <span>In house full mouth XRay</span>
-                  </div>
-                  <div class="service-box">
-                     <i class="bi bi-emoji-smile"></i>
-                     <span>Portable chairside Xray</span>
+                     <div class="service-box">
+                        <i class="bi bi-upc-scan"></i>
+                        <span>Best in Class Chairside iTero Scanner</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-capsule"></i>
+                        <span>Digital Implant Planning</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-capsule"></i>
+                        <span>Digital Smile Designing</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-capsule"></i>
+                        <span>Philips Zoom Teeth Whitening System</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-activity"></i>
+                        <span>Latest Smile Simulation Technology</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-heart-pulse"></i>
+                        <span>Advanced Dental Equipments</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-brightness-high"></i>
+                        <span>Luxurious and Ergonomic Dental Chairs</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span>In House Full Mouth X-Ray (OPG)</span>
+                     </div>
+                     <div class="service-box">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span>Portable Chairside X-Ray</span>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </section>
-
 
    <section class="open mt-5" id="contact">
       <!-- <div class="container"> -->
@@ -382,7 +450,7 @@
       </div>
    </section>
 
-   <section id="services">
+   <!-- <section id="services">
       <div class="container">
          <div class="text-center">
             <h1 class="text-center fw-bold mb-5">Our Services</h1>
@@ -432,170 +500,336 @@
             </div>
          </div>
       </div>
+   </section> -->
+
+   <!-- <section class="container py-5">
+      <div class="text-center mb-4">
+         <h2><span style="color: gray;">Our</span> <strong>Services</strong></h2>
+      </div>
+
+      <div id="treatmentCarousel" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+               <div class="row justify-content-center">
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#f5f5f5;">
+                        <h5>Dental Veneers</h5>
+                        <img src="images/service 1.webp" class="img-fluid treatment-img" alt="Braces">
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#e6e9f8;">
+                        <h5>Zoom Whitening</h5>
+                        <img src="images/service 2.webp" class="img-fluid treatment-img" alt="Invisalign">
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#ffe3e6;">
+                        <h5>Aligners</h5>
+                        <img src="images/service 3.webp" class="img-fluid treatment-img" alt="Dentures">
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#d9f5f1;">
+                        <h5>Advanced Surgical Procedures</h5>
+                        <img src="images/service 4.webp" class="img-fluid treatment-img" alt="Dental Implant">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="carousel-item">
+               <div class="row justify-content-center">
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#f5f5f5;">
+                        <h5>Minimal Invasive Dentistry</h5>
+
+                        <img src="images/service 5.webp" class="img-fluid treatment-img" alt="Braces">
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="treatment-card" style="background:#e6e9f8;">
+                        <h5>Dental Implants</h5>
+
+                        <img src="images/dental imp.jpg" class="img-fluid treatment-img" alt="Invisalign">
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+
+         <button class="carousel-control-prev" type="button" data-bs-target="#treatmentCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#treatmentCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+         </button>
+      </div>
+   </section> -->
+
+   <section class="container py-5">
+      <div class="text-center mb-4">
+         <h2><span style="color: gray">Our</span> <strong>Services</strong></h2>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper py-2">
+         <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #f5f5f5">
+                  <h5>Dental Veneers</h5>
+                  <img src="images/service 1.webp" class="img-fluid treatment-img" alt="Dental Veneers" />
+               </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #e6e9f8">
+                  <h5>Zoom Whitening</h5>
+                  <img src="images/service 2.webp" class="img-fluid treatment-img" alt="Zoom Whitening" />
+               </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #ffe3e6">
+                  <h5>Aligners</h5>
+                  <img src="images/service 3.webp" class="img-fluid treatment-img" alt="Aligners" />
+               </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #d9f5f1">
+                  <h5>Advanced Surgical Procedures</h5>
+                  <img src="images/service 4.webp" class="img-fluid treatment-img" alt="Advanced Surgery" />
+               </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #f5f5f5">
+                  <h5>Minimal Invasive Dentistry</h5>
+                  <img src="images/service 5.webp" class="img-fluid treatment-img" alt="Minimal Invasive Dentistry" />
+               </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+               <div class="treatment-card" style="background: #e6e9f8">
+                  <h5>Dental Implants</h5>
+                  <img src="images/dental imp.jpg" class="img-fluid treatment-img" alt="Dental Implants" />
+               </div>
+            </div>
+         </div>
+
+         <!-- Pagination & Navigation -->
+         <!-- <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
    </section>
 
    <section id="services">
       <div class="container">
          <div class="row g-5 pb-5 align-items-center">
             <div class="col-md-6 col-12 d-flex justify-content-center">
-
                <img src="images/dental veneer.jpg" alt="Dental veneers" title="Dental Veneers"
-                  class="rounded-4 img-fluid">
-
+                  class="rounded-4 img-fluid" />
             </div>
 
-            <div class="col-md-6 col-12  justify-content-center">
-               <h2 class="text-start">Dental Veneers</h2>
+            <div class="col-md-6 col-12 justify-content-center">
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Dental Veneers
+                  </span>
+               </h2>
                <p>
                   Dental veneers are thin, custom-made shells of tooth-colored
                   material placed over the front surface of teeth to improve their
                   appearance, correcting issues like chipped, stained, or crooked
-                  teeth Veneers are used in cosmetic dentistry to correct a variety of
-                  dental issues, including: <br>
-                  <strong>Discolored Teeth:</strong> Fixing severe
-                  discoloration or uneven coloring that can't be addressed with
-                  whitening. <br>
-                  <strong>Chipped or Broken Teeth:</strong> Restoring the appearance of
-                  teeth that have been damaged. <br>
-                  <strong>Misaligned or Worn Teeth:</strong> Improving
-                  the shape and appearance of teeth that are worn down or oddly
-                  shaped. <br>
-                  <strong>Between Teeth:</strong>Closing gaps to create a more uniform
-                  smile.
+                  teeth Veneers are used in cosmetic dentistry to correct a variety
+                  of dental issues, including: <br />
+                  <strong>Discolored Teeth:</strong> Fixing severe discoloration or
+                  uneven coloring that can't be addressed with whitening. <br />
+                  <strong>Chipped or Broken Teeth:</strong> Restoring the appearance
+                  of teeth that have been damaged. <br />
+                  <strong>Misaligned or Worn Teeth:</strong> Improving the shape and
+                  appearance of teeth that are worn down or oddly shaped. <br />
+                  <strong>Between Teeth:</strong>Closing gaps to create a more
+                  uniform smile.
                </p>
             </div>
-
          </div>
 
          <div class="row d-flex g-5 pb-5 align-items-center">
             <div class="col-md-6 col-12 justify-content-center order-2 order-md-1">
-
-               <h2 class="text-start">Zoom whitening</h2>
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Zoom Whitening
+                  </span>
+               </h2>
                <p>
-                  Zoom Whitening Section<br>
-                  <strong>World’s best teeth whitening system</strong><br>
-                  Teeth whitening in just 45 mins with Philips Zoom in-office whitening, you can unlock a smile up to 8
-                  shades whiter in just 45 minutes.<br>
-                  <strong>The added bonus?</strong><br>
-                  You get outstanding results with little to no sensitivity.<br>
+                  Zoom Whitening Section<br />
+                  <strong>World’s best teeth whitening system</strong><br />
+                  Teeth whitening in just 45 mins with Philips Zoom in-office
+                  whitening, you can unlock a smile up to 8 shades whiter in just 45
+                  minutes.<br />
+                  <strong>The added bonus?</strong><br />
+                  You get outstanding results with little to no sensitivity.<br />
                   <strong>Why choose Philips Zoom in-office whitening ?</strong>
-                  When you choose in-clinic tooth whitening, stronger whitening ingredients are used to safely complete
-                  your treatment.<br>
-                  Instantly brighter teeth, with little to no sensitivity within 60 minutes.
-
-
+                  When you choose in-clinic tooth whitening, stronger whitening
+                  ingredients are used to safely complete your treatment.<br />
+                  Instantly brighter teeth, with little to no sensitivity within 60
+                  minutes.
                </p>
-
             </div>
 
             <div class="col-md-6 col-12 d-flex justify-content-center order-1 order-md-2">
-
-               <img src="images/slider3.jpg" alt="" title="" class="rounded-4 img-fluid">
-
+               <img src="images/slider3.jpg" alt="" title="" class="rounded-4 img-fluid" />
             </div>
-
          </div>
 
          <div class="row d-flex g-5 pb-5 align-items-center">
-            <div class="col-md-6 col-12 d-flex justify-content-center ">
-
-               <img src="images/AligNers.jpg" alt="Aligners" title="Aligners" class="rounded-4 img-fluid">
-
+            <div class="col-md-6 col-12 d-flex justify-content-center">
+               <img src="images/AligNers.jpg" alt="Aligners" title="Aligners" class="rounded-4 img-fluid" />
             </div>
 
             <div class="col-md-6 col-12 justify-content-center">
-               <h2 class="text-start">Aligners</h2>
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Aligners
+                  </span>
+               </h2>
                <p>
-                  Only Black Diamond Invisalign provider clinic of Faridabad working in collaboration with Dr Karan
-                  Bhalla-
-                  black Diamond Invisalign Provider.<br>
+                  Only Black Diamond Invisalign provider clinic of Faridabad working
+                  in collaboration with Dr Karan Bhalla- black Diamond Invisalign
+                  Provider.<br />
 
-                  The Invisalign® System is the most advanced clear aligner system in the world, trusted by over 20.1
-                  million people worldwide to improve their smiles.<br>
-                  <strong>SmartTrack™ material.</strong> Align Technology’s own patented aligner material that provides
-                  gentle, more
-                  constant forces to improve control of tooth movements.<br>
-                  <strong>SmartStage™ technology.</strong> Programming each tooth movement in a certain sequence, at the
-                  right time to
-                  achieve optimal outcomes and greater predictability.<br>
-                  <strong>SmartForce™ attachments.</strong> Attachments and features designed into the aligners deliver
-                  the
-                  precise forces
-                  when needed to achieve more predictable tooth movements.
-
+                  The Invisalign® System is the most advanced clear aligner system
+                  in the world, trusted by over 20.1 million people worldwide to
+                  improve their smiles.<br />
+                  <strong>SmartTrack™ material.</strong> Align Technology’s own
+                  patented aligner material that provides gentle, more constant
+                  forces to improve control of tooth movements.<br />
+                  <strong>SmartStage™ technology.</strong> Programming each tooth
+                  movement in a certain sequence, at the right time to achieve
+                  optimal outcomes and greater predictability.<br />
+                  <strong>SmartForce™ attachments.</strong> Attachments and features
+                  designed into the aligners deliver the precise forces when needed
+                  to achieve more predictable tooth movements.
                </p>
             </div>
-
          </div>
 
          <div class="row d-flex g-5 pb-5 align-items-center">
             <div class="col-md-6 col-12 justify-content-center order-2 order-md-1">
-
-               <h2 class="text-start">Advanced Surgical Procedures</h2>
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Dental Implants
+                  </span>
+               </h2>
                <p>
-                  With advanced technology and a gentle approach, we ensure every procedure is
-                  safe, precise, and comfortable.
-
-                  Our Oral Surgery Treatments Include:<br>
-
-                  <strong>Wisdom Teeth Removal</strong> Safe extraction of impacted or problematic wisdom teeth to
-                  prevent
-                  pain, infection,
-                  and crowding.<br>
-
-                  <strong>Computer Guided Implants</strong> Ensures precise, minimally invasive, and highly accurate
-                  dental implant placement using advanced 3D technology<br>
-
-                  <strong>Laser Gum surgery</strong> A painless, minimally invasive solution for treating gum disease
-                  with faster healing and improved comfort.<br>
-
-                  <strong>Aesthetic Crown lengthening</strong> Reshapes the gum line to enhance your smile’s balance,
-                  beauty, and overall appearance.<br>
-
-                  <strong>Teeth splinting for loose teeth</strong> Stabilizes loose teeth by joining them together,
-                  restoring strength and improving oral function.<br>
-
-                  From consultation to aftercare, our team provides personalized attention to make your oral surgery
-                  experience smooth and stress-free.
+                  <strong>WHAT EXACTLY ARE DENTAL IMPLANTS ?</strong><br />
+                  A Dental Implant is actually a titanium post surgically inserted
+                  into the jawbone beneath the gum line which work as a tooth root.
+                  After insertion, a dental implantologist will attach the crown on
+                  top of the implant to ensure that the teeth appear natural.
                </p>
 
+               <p>
+                  The best part about tooth implants is that they not only look or
+                  feel like your natural teeth but function like them as well. Get
+                  the top dental implant services in <strong>Faridabad</strong> only
+                  at <strong>Dr. Dipti's Smile Suite</strong>.
+               </p>
             </div>
 
             <div class="col-md-6 col-12 d-flex justify-content-center order-1 order-md-2">
-
-               <img src="images/dental1.jpg" alt="oral Surgery" title="Oral Surgery" class="rounded-4 img-fluid">
-
+               <img src="images/dental-implants.webp" alt="" title="Dental Implants" class="rounded-4 img-fluid" />
             </div>
-
          </div>
 
          <div class="row d-flex g-5 pb-5 align-items-center">
-            <div class="col-md-6 col-12 d-flex justify-content-center ">
+            <div class="col-md-6 col-12 justify-content-center order-1 order-md-2">
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Advanced Surgical Procedures
+                  </span>
+               </h2>
+               <p>
+                  With advanced technology and a gentle approach, we ensure every
+                  procedure is safe, precise, and comfortable. Our Oral Surgery
+                  Treatments Include:<br />
 
-               <img src="images/minimal-invasive-dentistry-oakville-on.jpg" alt="Minimal Invasive Dentistry" title="" class="rounded-4 img-fluid">
+                  <strong>Wisdom Teeth Removal</strong> Safe extraction of impacted
+                  or problematic wisdom teeth to prevent pain, infection, and
+                  crowding.<br />
 
+                  <strong>Computer Guided Implants</strong> Ensures precise,
+                  minimally invasive, and highly accurate dental implant placement
+                  using advanced 3D technology<br />
+
+                  <strong>Laser Gum surgery</strong> A painless, minimally invasive
+                  solution for treating gum disease with faster healing and improved
+                  comfort.<br />
+
+                  <strong>Aesthetic Crown lengthening</strong> Reshapes the gum line
+                  to enhance your smile’s balance, beauty, and overall
+                  appearance.<br />
+
+                  <strong>Teeth splinting for loose teeth</strong> Stabilizes loose
+                  teeth by joining them together, restoring strength and improving
+                  oral function.<br />
+
+                  From consultation to aftercare, our team provides personalized
+                  attention to make your oral surgery experience smooth and
+                  stress-free.
+               </p>
             </div>
 
-            <div class="col-md-6 col-12 justify-content-center">
-               <h2 class="text-start">Minimal Invasive Dentistry</h2>
+            <div class="col-md-6 col-12 d-flex justify-content-center order-2 order-md-1">
+               <img src="images/dental1.jpg" alt="oral Surgery" title="Oral Surgery" class="rounded-4 img-fluid" />
+            </div>
+         </div>
+
+         <div class="row d-flex g-5  align-items-center">
+            <div class="col-md-6 col-12 d-flex justify-content-center order-1 order-md-2">
+               <img src="images/minimal-invasive-dentistry-oakville-on.jpg" alt="Minimal Invasive Dentistry" title=""
+                  class="rounded-4 img-fluid" />
+            </div>
+
+            <div class="col-md-6 col-12 justify-content-center order-2 order-md-1">
+               <h2>
+                  <span class="badge bg-black text-white px-3 py-2 rounded-pill">
+                     Minimal Invasive Dentistry
+                  </span>
+               </h2>
                <p>
-                  we are proud to inform that we do world class minimal invasive dentistry(MID) at our clinic with
-                  includes treatments like :<br>
-                  <strong>Inlays</strong>, <strong>Onlays</strong>, <strong>Partial coverage crowns</strong>,
-                  <strong>Table top crowns</strong>, <strong>Minimal/no prep veneers.</strong>
+                  we are proud to inform that we do world class minimal invasive
+                  dentistry(MID) at our clinic with includes treatments like :<br />
+                  <strong>Inlays</strong>, <strong>Onlays</strong>,
+                  <strong>Partial coverage crowns</strong>,
+                  <strong>Table top crowns</strong>,
+                  <strong>Minimal/no prep veneers.</strong>
                </p>
                <p>
-                  Why these procedures set the standard of our dentistry apart? <br>
+                  Why these procedures set the standard of our dentistry apart?
+                  <br />
 
-                  <strong>More Natural Tooth Preservation</strong><br>
-                  <strong>Looks and feels more like your Natural Teeth</strong><br>
-                  <strong>Minimal to no down time</strong><br>
-                  <strong>More Biocompatible</strong><br>
-                  <strong>Preserves More Enamel</strong><br>
-                  <strong>Increase the Life of your Natural Teeth</strong><br>
-                  <strong>Latest Dental Treatment</strong><br>
-
-
+                  <strong>More Natural Tooth Preservation</strong><br />
+                  <strong>Looks and feels more like your Natural Teeth</strong><br />
+                  <strong>Minimal to no down time</strong><br />
+                  <strong>More Biocompatible</strong><br />
+                  <strong>Preserves More Enamel</strong><br />
+                  <strong>Increase the Life of your Natural Teeth</strong><br />
+                  <strong>Latest Dental Treatment</strong><br />
 
                   <!-- <ul type="disc">
                   <li>More natural tooth preservation</li>
@@ -608,91 +842,122 @@
                </ul> -->
                </p>
             </div>
-
          </div>
-
-
-         <div class="row d-flex g-5 pb-5 align-items-center">
-            <div class="col-md-6 col-12 justify-content-center order-2 order-md-1">
-
-               <h2 class="text-start">Dental Implants</h2>
-
-
-               <p><strong>WHAT EXACTLY ARE DENATAL IMPLANTS ?</strong><br>
-                  A Dental Implant is actually a titanium post surgically inserted into the jawbone beneath the gum line
-                  which work as a tooth root. After insertion, a dental implantologist will attach the crown on top of
-                  the implant to ensure that the teeth appear natural.
-               </p>
-
-               <p>The best part about tooth implants is that they not only look or feel like your natural teeth but
-                  function like them as well. Get the top dental implant services in <strong>Faridabad</strong> only at
-                  <strong>Dr. Dipti's Smile Suite</strong>.</p>
-
-            </div>
-
-            <div class="col-md-6 col-12 d-flex justify-content-center order-1 order-md-2">
-
-               <img src="images/dental-implants.webp" alt="" title="Dental Implants" class="rounded-4 img-fluid">
-
-            </div>
-
-         </div>
-
       </div>
    </section>
 
-   <!-- <p>
-            Teeth whitening in just 45 mins with Philips Zoom in-office
-            whitening, you can unlock a smile up to 8 shades whiter in just 45
-            minutes1. The added bonus? You get outstanding results with little
-            to no sensitivity. No wonder millions of people have already trusted
-            us with whitening their smiles. Why choose Philips Zoom in-office
-            whitening? When you choose in-office tooth whitening, stronger
-            whitening ingredients are used to safely complete your treatment.
-            The result? Instantly brighter teeth, with little to no sensitivity.
-          </p> -->
+   <section class="ourteam">
+      <div class="container">
+         <div class="row py-5">
+            <div class="col-12 col-md-6 centerdisplay order-2 order-lg-1">
+               <div class="">
+                  <span>Meet the Team</span>
+                  <h2>
+                     Brilliant Team <br />
+                     Dr. Dipti's Smile Suite and Team
+                  </h2>
+                  <p>
+                     A team of dentists who are proud to work together towards
+                     setting new standards for oral healthcare at an affordable reach
+                     for everybody to benefit from. We are committed to providing you
+                     with comprehensive dental treatment and excellent dentistry in a
+                     comfortable environment. If you are searching for a
+                     <a href="https://drdiptismilesuite.com/blogs/best-dentist-clinic-in-sector-14-faridabad/"><b>dentist
+                           in Sector 14 Faridabad.</b></a>
+                  </p>
+                  <p>
+                     Then Dr. Dipti’s Smile Suite is the best Dental Clinic in
+                     Faridabad. Our clinic is dedicated to making high-quality dental
+                     care accessible to all. We offer a full spectrum of dental
+                     services, including preventive care, cosmetic treatments,
+                     orthodontics, and restorative procedures. Our team uses the
+                     latest technology and techniques to ensure that each patient
+                     receives the best possible care tailored to their individual
+                     needs. Our commitment to excellence and affordability sets us
+                     apart as the
+                     <a href="https://drdiptismilesuite.com/"><b>best dental clinic in Faridabad</b></a>. Whether you
+                     need routine check-ups, advanced dental
+                     treatments, or cosmetic enhancements, you can trust our skilled
+                     team to deliver exceptional results.
+                  </p>
+               </div>
+            </div>
+            <div class="col-12 col-md-6 justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
+               <div class="teampic">
+                  <img src="images/OUR TEAM.jpg" class="img-fluid rounded-4 shadow-lg bg-body-tertiary rounded"
+                     alt="With there Brilliant Team" title="With there Brilliant Team" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
-   <!-- <p>
-            The Invisalign® System is the most advanced clear aligner system in
-            the world, trusted by over 20.1 million people worldwide to improve
-            their smiles. SmartTrack™ material. Align Technology’s own patented
-            aligner material that provides gentle, more constant forces to
-            improve control of tooth movements. After testing 260 different
-            materials, our material on average enables faster treatment.
-            SmartStage™ technology. Programming each tooth movement in a certain
-            sequence, at the right time to achieve optimal outcomes and greater
-            predictability. SmartForce™ attachments. Attachments and features
-            designed into the aligners deliver the precise forces when needed to
-            achieve more predictable tooth movements. The Invisalign® System is
-            the only system in the world with features such as Bite Ramps,
-            Precision Cuts, Power Ridge to help address a wide range of clinical
-            situations. -->
+   <section class="testimonials">
+      <div class="overlay h-5"></div>
+      <div class="container">
+         <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Read and be one of our Testimonials</p>
+         </div>
 
-   <!-- Why patients choose us:
+         <div class="testimonial-slider">
+            <!-- Single Testimonial -->
+            <div class="testimonial-card">
+               <span class="quote-icon">“</span>
+               <p class="p-3">
+                  Dr. Dipti's Smile Suite in Faridabad, Sector 14, is a dental
+                  haven. Dr. Dipti and her team are the best dentists in Faridabad,
+                  offering exceptional dental implant services. Their warm and
+                  welcoming staff create a calming atmosphere. I'm delighted with my
+                  new smile!
+               </p>
+               <div class="testimonial-author">
+                  <img src="images/icons/testicon.png" alt="Client" />
+                  <div class="d-flex flex-column gap-1">
+                     <div class="stars">⭐⭐⭐⭐⭐</div>
+                     <h6>Shivani</h6>
+                  </div>
+               </div>
+            </div>
 
-               Certified Invisalign Provider with extensive experience
+            <div class="testimonial-card">
+               <span class="quote-icon">“</span>
+               <p class="p-3">
+                  I'm thrilled to share my exceptional experience at Dr. Dipti's
+                  Smile Suite. The comforting atmosphere and caring team made my
+                  root canal treatment pain-free and efficient. The best dental
+                  clinic in Faridabad!
+               </p>
+               <div class="testimonial-author">
+                  <img src="images/icons/testicon.png" alt="Client" />
+                  <div class="d-flex flex-column gap-1">
+                     <div class="stars">⭐⭐⭐⭐⭐</div>
+                     <h6>Divyanshu</h6>
+                  </div>
+               </div>
+            </div>
 
-               3D Digital Scans – no messy impressions
-
-               Predictable results with customized treatment plans
-
-               Discreet treatment – straighten your teeth without anyone noticing
-
-               Flexible payment plans to fit your budget -->
-
-   <!-- <p>
-            Oral surgery can restore your oral health, improve function, and
-            enhance your smile — all with expert care from our skilled dental
-            team. Whether it’s wisdom tooth removal, dental implant placement,
-            or treating jaw-related concerns, we ensure every procedure is safe,
-            precise, and comfortable. The added bonus? With advanced techniques
-            and gentle care, healing is faster, and discomfort is minimized. No
-            wonder so many patients trust us when it comes to surgical dental
-            treatments.
-          </p> -->
+            <div class="testimonial-card">
+               <span class="quote-icon">“</span>
+               <p class="p-3">
+                  From the moment I stepped into the clinic, I was impressed by the
+                  warm and welcoming atmosphere. Dr. Dipti’s expertise and modern
+                  facilities gave me confidence. Highly recommended!
+               </p>
+               <div class="testimonial-author">
+                  <img src="images/icons/testicon.png" alt="Client" />
+                  <div class="d-flex flex-column gap-1">
+                     <div class="stars">⭐⭐⭐⭐⭐</div>
+                     <h6>Ishika</h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
    <section class="insta-carousel" id="testimonials">
-      <div class="container-fluid">
+      <div class="container-fluid pt-5">
          <div class="headingcenter">
             <h2 class="text-center pb-5 fw-bold">Instagram Testimonials</h2>
          </div>
@@ -805,116 +1070,9 @@
       </div>
    </section> -->
 
-   <section class="testimonials">
-      <div class="overlay h-5"></div>
-      <div class="container">
-         <div class="section-header">
-            <h2>What Our Clients Say</h2>
-            <p>Read and be one of our Testimonials</p>
-         </div>
 
-         <div class="testimonial-slider">
-            <!-- Single Testimonial -->
-            <div class="testimonial-card">
-               <span class="quote-icon">“</span>
-               <p class="p-3">
-                  Dr. Dipti's Smile Suite in Faridabad, Sector 14, is a dental
-                  haven. Dr. Dipti and her team are the best dentists in Faridabad,
-                  offering exceptional dental implant services. Their warm and
-                  welcoming staff create a calming atmosphere. I'm delighted with my
-                  new smile!
-               </p>
-               <div class="testimonial-author">
-                  <img src="images/icons/testicon.png" alt="Client" />
-                  <div class="d-flex flex-column gap-1">
-                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                     <h6>Shivani</h6>
-                  </div>
-               </div>
-            </div>
 
-            <div class="testimonial-card">
-               <span class="quote-icon">“</span>
-               <p class="p-3">
-                  I'm thrilled to share my exceptional experience at Dr. Dipti's
-                  Smile Suite. The comforting atmosphere and caring team made my
-                  root canal treatment pain-free and efficient. The best dental
-                  clinic in Faridabad!
-               </p>
-               <div class="testimonial-author">
-                  <img src="images/icons/testicon.png" alt="Client" />
-                  <div class="d-flex flex-column gap-1">
-                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                     <h6>Divyanshu</h6>
-                  </div>
-               </div>
-            </div>
 
-            <div class="testimonial-card">
-               <span class="quote-icon">“</span>
-               <p class="p-3">
-                  From the moment I stepped into the clinic, I was impressed by the
-                  warm and welcoming atmosphere. Dr. Dipti’s expertise and modern
-                  facilities gave me confidence. Highly recommended!
-               </p>
-               <div class="testimonial-author">
-                  <img src="images/icons/testicon.png" alt="Client" />
-                  <div class="d-flex flex-column gap-1">
-                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                     <h6>Ishika</h6>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="ourteam">
-      <div class="container">
-         <div class="row py-5">
-            <div class="col-12 col-md-6 centerdisplay order-2 order-lg-1">
-               <div class="">
-                  <span>Meet the Team</span>
-                  <h2>
-                     Brilliant Team <br />
-                     Dr. Dipti's Smile Suite and Team
-                  </h2>
-                  <p>
-                     A team of dentists who are proud to work together towards
-                     setting new standards for oral healthcare at an affordable reach
-                     for everybody to benefit from. We are committed to providing you
-                     with comprehensive dental treatment and excellent dentistry in a
-                     comfortable environment. If you are searching for a
-                     <a href="https://drdiptismilesuite.com/blogs/best-dentist-clinic-in-sector-14-faridabad/"><b>dentist
-                           in Sector 14 Faridabad.</b></a>
-                  </p>
-                  <p>
-                     Then Dr. Dipti’s Smile Suite is the best Dental Clinic in
-                     Faridabad. Our clinic is dedicated to making high-quality dental
-                     care accessible to all. We offer a full spectrum of dental
-                     services, including preventive care, cosmetic treatments,
-                     orthodontics, and restorative procedures. Our team uses the
-                     latest technology and techniques to ensure that each patient
-                     receives the best possible care tailored to their individual
-                     needs. Our commitment to excellence and affordability sets us
-                     apart as the
-                     <a href="https://drdiptismilesuite.com/"><b>best dental clinic in Faridabad</b></a>. Whether you
-                     need routine check-ups, advanced dental
-                     treatments, or cosmetic enhancements, you can trust our skilled
-                     team to deliver exceptional results.
-                  </p>
-               </div>
-            </div>
-            <div class="col-12 col-md-6 justify-content-center  align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
-               <div class="teampic">
-                  <img src="images/OUR TEAM.jpg"
-                     class="img-fluid rounded-4 shadow-lg bg-body-tertiary rounded" 
-                     alt="With there Brilliant Team" title="With there Brilliant Team" />
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
 
    <div class="map">
       <iframe
@@ -1060,8 +1218,7 @@
                         </div>
                         <div class="col-3 col-md-4">
                            <div class="footer-icon mb-2">
-                              <a href="https://www.instagram.com/drdiptizsmillesuite/?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
-                                 title="Instagram" target="_blank">
+                              <a href="https://www.instagram.com/drdiptizsmillesuite" title="Instagram" target="_blank">
                                  <i class="fab fa-instagram"></i></a>
                            </div>
                         </div>
@@ -1078,13 +1235,13 @@
                               </a>
                            </div>
                         </div>
-                        <div class="col-3 col-md-4">
+                        <!-- <div class="col-3 col-md-4">
                            <div class="footer-icon">
                               <a href="https://twitter.com/drdiptiss" title="Twitter" target="_blank">
                                  <i class="fa-brands fa-twitter"></i>
                               </a>
                            </div>
-                        </div>
+                        </div> -->
                         <div class="col-3 col-md-4">
                            <div class="footer-icon">
                               <a href="https://www.linkedin.com/in/drdiptismilesuite/" title="Linkedin" target="_blank">
@@ -1096,8 +1253,8 @@
                   </div>
                </div>
 
-               <div class="col-md-12 col-xs-12 col-sm-12">
-                  <div class="copyright">
+               <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+                  <div class="copyright ">
                      <p>Copy Right All Reserved by</p>
                      <a href="https://brandingwaale.com" title="Brandingwaale">Brandingwaale.com</a>
                   </div>
@@ -1119,6 +1276,68 @@
 
    <!-- Slick JS -->
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+
+   <script>
+      document.addEventListener("DOMContentLoaded", () => {
+         function animateCounters() {
+            const counters = document.querySelectorAll(".count");
+
+            counters.forEach(counter => {
+               const target = +counter.getAttribute("data-target");
+               const duration = 1500; // total animation time in ms
+               const start = 0;
+               const startTime = performance.now();
+
+               function updateCount(currentTime) {
+                  const elapsed = currentTime - startTime;
+                  const progress = Math.min(elapsed / duration, 1); // between 0 and 1
+                  const value = Math.floor(progress * (target - start) + start);
+
+                  counter.innerText = value.toLocaleString(); // adds commas if needed
+
+                  if (progress < 1) {
+                     requestAnimationFrame(updateCount);
+                  } else {
+                     counter.innerText = target.toLocaleString() + "+";
+                  }
+               }
+
+               requestAnimationFrame(updateCount);
+            });
+         }
+
+         animateCounters();
+      });
+   </script>
+
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         loop: true,
+         autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+         },
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+         breakpoints: {
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+         },
+      });
+   </script>
 
    <script>
       $(".insta-testimonial-slider").slick({
@@ -1160,16 +1379,17 @@
       });
 
       $(".slider-move").slick({
-         slidesToShow: 1,
+         slidesToShow: 3,
          slidesToScroll: 1,
-         dots: true,
+         dots: false,
          autoplay: true,
          autoplaySpeed: 2000,
+         spaceBetween: 20,
          responsive: [
             {
-               breakpoint: 769,
+               breakpoint: 991,
                settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 3,
                   infinite: true,
                   dots: true,
                   arrows: true,
