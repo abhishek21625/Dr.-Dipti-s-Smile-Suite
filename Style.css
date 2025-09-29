@@ -187,11 +187,6 @@ nav {
   color: #000000;
 }
 
-/* @media (min-width: 768px) { */
-.stat-box h2 {
-  font-size: 2.2rem;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -391,7 +386,7 @@ nav {
 
   .hero-section h3 {
     font-size: 16px;
-    /* text-align: center; */
+    text-align: center !important;
   }
 
   .stat-box {
@@ -423,120 +418,10 @@ nav {
     font-size: 16px;
     text-align: center;
   }
+
+  .insta-testimonial-slider img {
+  height: 500px !important;
 }
-
-/* ========================= */
-/* 📲 Medium devices (577px – 768px) */
-/* ========================= */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 90px 30px 50px !important;
-  }
-
-  /* .text1 {
-    font-size: 32px;
-    text-align: center;
-  } */
-
-  .hero-section h3 {
-    font-size: 18px;
-    /* text-align: center; */
-  }
-
-  .stat-box {
-    /* padding: 15px; */
-    margin-bottom: 20px;
-  }
-
-  .form-container {
-    max-width: 90%;
-    margin: 20px auto 0;
-    margin-bottom: 20px;
-  }
-}
-
-/* ========================= */
-/* 💻 Tablets (769px – 991px) */
-/* ========================= */
-@media (max-width: 991px) {
-  .hero-section {
-    padding: 140px 40px 60px;
-  }
-
-  /* .text1 {
-    font-size: 36px;
-  } */
-
-  .form-container {
-    max-width: 95%;
-    margin-top: 20px;
-  }
-}
-
-/* @media (max-width: 768px) {
-  .text1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .form-container {
-    margin: auto;
-    margin-top: 30px;
-  }
-} */
-
-
-/* .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  max-width: 800px;
-}
-
-.skill-tag {
-  padding: 5px 24px;
-  border: 2px solid white;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 500;
-  background: transparent;
-  color: white;
-  transition: all 0.3s ease;
-  cursor: pointer;
-} */
-
-/* @media (max-width: 992px) {
-  .hero-section {
-    padding: 80px 40px;
-  }
-
-  .text1 {
-    font-size: 32px;
-  }
-
-  .form-container {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .text1 {
-    font-size: 28px;
-    margin-top: 20px;
-  }
-
-  .form-container {
-    margin: 20px auto 0;
-    width: 100%;
-  }
 
   .footer-links ul {
     display: flex;
@@ -553,26 +438,146 @@ nav {
   .address p {
     text-align: center;
   }
-} */
-/* 
-@media (max-width: 576px) {
+
+  .copyright {
+  display: -webkit-inline-box;
+  float: right;
+  margin: 22px 0 0 0 !important;
+}
+}
+
+
+/* 🌐 Navbar & Hero Responsive for Medium Devices */
+@media (max-width: 991px) {
+
+  /* Navbar */
+  nav {
+    top: 15px;
+    padding: 0 20px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    padding: 10px 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 15px;
+  }
+
+  .btn {
+   display: none;
+  }
+
+  /* Hero Section */
   .hero-section {
-    padding: 40px 15px;
+    padding: 120px 20px 60px; /* reduce padding */
+    /* text-align: center; */
+  }
+
+  .hero-section h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    /* text-align: left !important; */
   }
 
   .text1 {
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-top: 20px;
+    /* text-align: left !important; */
   }
 
+  .stat-box {
+    min-height: auto;
+    padding: 10px !important;
+  }
+
+  .hero-logo img {
+    width: 90px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .text1 {
+    font-size: 28px;
+    line-height: 1.3;
+    /* text-align: center; */
+    margin-top: 20px;
+  }
+
+  .stat-box {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .stat-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .stat-box p {
+    font-size: 0.85rem;
+  }
+
+  /* Form */
   .form-container {
+    margin: 40px auto 0;
+    max-width: 100%;
     padding: 20px;
   }
 
-  .btn-submit {
-    font-size: 14px;
-    padding: 10px 20px;
+  .form-container h2 {
+    font-size: 22px;
   }
-} */
+
+  .form-container h3 {
+    font-size: 16px;
+  }
+
+  #services img {
+    width: 100%;
+  }
+
+  .treatment-card h5 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  height: auto !important;
+}
+
+.insta-testimonial-slider img {
+  height: 900px;
+}
+
+.copyright {
+  display: -webkit-inline-box;
+  /* float: right; */
+  /* text-align: center !important; */
+  margin: 20px 35px 10px !important;
+}
+
+}
+
+/* @media (max-width: 767px) {
+  
+.treatment-card {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .treatment-card h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .treatment-card img {
+    min-height: 120px;
+    max-height: 160px;
+  }
+  } */
+
+
 
 .flow-list {
   padding: 40px 0;
@@ -1108,7 +1113,7 @@ nav {
 .copyright {
   display: -webkit-inline-box;
   float: right;
-  margin: 22px 0 0 0;
+  margin: 22px 35px 0;
 }
 
 .copyright p,
@@ -1193,30 +1198,7 @@ ul.vertilist li a:hover::before {
 a {
   text-decoration: none;
 }
-/* 
-@media (max-width: 676px) {
-  .hero-section {
-    padding: 60px 30px;
-  }
 
-  .why-choose-content {
-    padding: 0px;
-  }
-
-  .text1 {
-    font-size: 30px;
-  }
-
-  .text2 {
-    font-size: 20px;
-  }
-
-  .text3 {
-    font-size: 15px;
-  }
-} */
-
-/* Custom dropdown box */
 .custom-dropdown {
   position: relative;
   width: 100%;
@@ -1386,7 +1368,3 @@ a {
   overflow: hidden;
 
 }
-/* 
-section{
-  overflow: hidden;
-} */
