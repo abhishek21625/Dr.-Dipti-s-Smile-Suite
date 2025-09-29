@@ -47,163 +47,15 @@ body {
   outline-offset: 2px;
 }
 
-.hero-section {
-  background: url("images/Orthodontic-Tools-For-Common-Bite-Problems-scaled.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
-  padding-top: 180px;
-  padding-bottom: 70px;
-  padding-left: 70px;
-  padding-right: 70px;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.why-choose-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.stat-box {
-  background-color: #fff8ef;
-  border-radius: 10px;
-  padding: 10px;
-  min-height: 150px;
-  /* margin-bottom: 20px */
-}
-
-.stat-box .why-choose-icon img {
-  width: 60px;
-  margin-bottom: 5px;
-}
-
-.stat-box h2 {
-  font-size: 1.5rem;
-  margin: 0;
-  color: #000000;
-}
-.stat-box p {
-  font-size: 0.9rem;
-  margin: 0;
-  color: #000000;
-}
-@media (min-width: 768px) {
-  .stat-box h2 {
-    font-size: 2.2rem;
-  }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.description {
-  position: relative;
-  z-index: 4;
-}
-
-.services {
-  background: rgb(255, 255, 255);
-  padding: 40px;
-}
-
-/* .text1 {
-  margin-top: 20px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-} */
-
-/* .form-container {
-  background: #fff;
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-left: auto;
-}
-
-.form-container h2 {
-  font-size: 22px;
-  margin-bottom: 5px;
-}
-
-.form-container h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid #000;
-  margin-bottom: 20px;
-  padding: 5px 0;
-}
-
-.form-group i {
-  margin-right: 10px;
-  color: #333;
-  min-width: 20px;
-  text-align: center;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  flex: 1;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  background: transparent;
-  padding: 6px 0;
-}
-
-.form-group textarea {
-  resize: none;
-  min-height: 60px;
-}
-
-.btn-submit {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-submit:hover {
-  background: #444;
-} */
-
-/* ================= NAVBAR ================= */
 nav {
-  /* background: #fff; */
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
-   position: absolute;
-   top: 30px;
+  position: absolute;
+  top: 30px;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 9999;
   border-radius: 40px;
-  z-index: 99999;
+  /* z-index: 99999; */
   padding: 0 50px;
   display: flex;
   align-items: center;
@@ -215,10 +67,10 @@ nav {
   margin: auto;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 60px;
   align-items: center;
-  padding: 5px 20px;
+  padding: 8px 20px;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -282,23 +134,89 @@ nav {
   transform: scale(1.05);
 }
 
-.text1 {
-  /* margin-top: 20px; */
+.hero-section {
+  background: url("images/Orthodontic-Tools-For-Common-Bite-Problems-scaled.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  padding-top: 180px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.hero-section h3 {
   color: #fff;
-  /* background: linear-gradient(135deg, #ffffff, #00c8ff); */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent; */
+}
+
+.why-choose-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-box {
+  background-color: #fff8ef;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 150px;
+  /* margin-bottom: 20px */
+}
+
+.stat-box .why-choose-icon img {
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+.stat-box h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000000;
+}
+
+.stat-box p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #000000;
+}
+
+/* @media (min-width: 768px) { */
+.stat-box h2 {
+  font-size: 2.2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  position: relative;
+  z-index: 4;
+}
+
+.text1 {
+  color: #fff;
   font-size: 50px;
   font-weight: 700;
-  /* font-style: italic; */
   line-height: 1.3;
-  /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
   animation: fadeInLeft 1s ease-in-out;
 }
 
-/* ================= FORM ================= */
 .form-container {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -361,7 +279,6 @@ nav {
 }
 
 .btn-submit {
-  /* background: linear-gradient(135deg, #407583, #0097a7); */
   background-color: #000;
   border: none;
   padding: 12px 25px;
@@ -382,13 +299,10 @@ nav {
   color: #eaeaea !important;
 }
 
-
 .btn-submit:hover {
   transform: scale(1.05);
-  /* box-shadow: 0px 6px 15px rgba(0, 188, 212, 0.5); */
 }
 
-/* ================= ANIMATIONS ================= */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -413,8 +327,153 @@ nav {
   }
 }
 
-/* ================= RESPONSIVE ================= */
+
+@media (max-width: 576px) {
+
+  nav {
+    top: 15px;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    border-radius: 35px;
+    padding: 8px 15px;
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 8px 0;
+    text-align: center;
+    display: block;
+  }
+
+  .btn {
+    /* width: 100%;
+    margin: 10px 0 0;
+    text-align: center; */
+    display: none;
+  }
+
+  .navbar-collapse {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .hero-section {
+    padding: 100px 15px 40px;
+    background-attachment: scroll; 
+  }
+
+  .hero-logo img {
+    width: 100px !important;
+  }
+
+  .text1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .hero-section h3 {
+    font-size: 16px;
+    /* text-align: center; */
+  }
+
+  .stat-box {
+    min-height: auto;
+    padding: 12px 5px;
+    margin-bottom: 15px;
+  }
+
+  .stat-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .stat-box p {
+    font-size: 0.8rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .form-container h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* ========================= */
+/* 📲 Medium devices (577px – 768px) */
+/* ========================= */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 90px 30px 50px !important;
+  }
+
+  /* .text1 {
+    font-size: 32px;
+    text-align: center;
+  } */
+
+  .hero-section h3 {
+    font-size: 18px;
+    /* text-align: center; */
+  }
+
+  .stat-box {
+    /* padding: 15px; */
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    max-width: 90%;
+    margin: 20px auto 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* ========================= */
+/* 💻 Tablets (769px – 991px) */
+/* ========================= */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 140px 40px 60px;
+  }
+
+  /* .text1 {
+    font-size: 36px;
+  } */
+
+  .form-container {
+    max-width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/* @media (max-width: 768px) {
   .text1 {
     font-size: 28px;
     text-align: center;
@@ -425,10 +484,10 @@ nav {
     margin: auto;
     margin-top: 30px;
   }
-}
+} */
 
 
-.skills-grid {
+/* .skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -447,10 +506,9 @@ nav {
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
-}
+} */
 
-/* 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .hero-section {
     padding: 80px 40px;
   }
@@ -495,8 +553,8 @@ nav {
   .address p {
     text-align: center;
   }
-}
-
+} */
+/* 
 @media (max-width: 576px) {
   .hero-section {
     padding: 40px 15px;
@@ -524,43 +582,37 @@ nav {
   font-size: large;
 }
 
-.hero-logo img {
-  width: 120px;
-  height: auto;
-}
-
-.hero-section h3 {
-  color: #fff;
-}
-
 .treatment-card {
-    text-align: center;
-    border-radius: 20px;
-    padding: 20px;
-    /* min-height: 290px; */
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  }
-  .treatment-card h5 {
-    margin-bottom: 25px;
-    font-size: 22px;
-    font-weight: 600;
-    height: 40px;
-  }
-  .treatment-card img {
-    min-height: 180px;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  .treatment-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  }
-  /* .treatment-card:hover img {
-    transform: scale(1.05);
-  } */
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 290px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
+.treatment-card h5 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  height: 40px;
+}
+
+.treatment-card img {
+  min-height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.treatment-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-card:hover img {
+  transform: scale(1.05);
+}
 
 .services {
   display: grid;
@@ -611,8 +663,6 @@ nav {
   justify-content: center;
   font-size: 30px;
   color: #fff;
-  /* background: linear-gradient(135deg, #0d6efd, #00c6ff); */
-  /* box-shadow: 0 6px 15px rgba(13, 110, 253, 0.4); */
   transition: 0.3s;
 }
 
@@ -727,7 +777,6 @@ nav {
 
 .testimonials .container {
   position: relative;
-  /* keeps content above overlay */
   z-index: 1;
 }
 
@@ -816,19 +865,6 @@ nav {
   color: gold;
 }
 
-/* 
-.slick-prev, .slick-next {
-  background: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  z-index: 2;
-}
-.slick-prev:hover, .slick-next:hover {
-  background: #000000;
-  color: #fff;
-} */
-
 .why-choose-content {
   background: #30323400;
   height: 95%;
@@ -875,7 +911,6 @@ nav {
 }
 
 .map {
-  /* margin: 50px 0; */
   padding: 10px 0px 40px;
   position: relative;
 }
@@ -1158,7 +1193,7 @@ ul.vertilist li a:hover::before {
 a {
   text-decoration: none;
 }
-
+/* 
 @media (max-width: 676px) {
   .hero-section {
     padding: 60px 30px;
@@ -1179,7 +1214,7 @@ a {
   .text3 {
     font-size: 15px;
   }
-}
+} */
 
 /* Custom dropdown box */
 .custom-dropdown {
@@ -1189,8 +1224,6 @@ a {
 }
 
 .dropdown-selected {
-  /* padding: 12px 40px 12px 35px; */
-  /* border: 1px solid #ccc; */
   padding-bottom: 10px;
   border-radius: 8px;
   background: #fff;
@@ -1226,7 +1259,6 @@ a {
   max-height: 200px;
   overflow-y: auto;
   display: none;
-  /* hidden by default */
   position: absolute;
   width: 100%;
   z-index: 1000;
@@ -1243,32 +1275,6 @@ a {
   background: #f0f8ff;
   color: #007bff;
 }
-
-/* #services {
-  padding: 60px 0;
-}
-
-#services h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-#services .serP img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-#services .serP img:hover {
-  transform: scale(1.05);
-}
-
-#services p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #444;
-} */
 
 #services {
   padding: 50px 0;
@@ -1361,20 +1367,26 @@ a {
   color: #d4af37;
 }
 
-}
-
 .slider-move img {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-  
-   height: 300px; 
+
+  height: 300px;
   /* aspect-ratio: 1/16; */
 
 }
 
-.slider-move .slick-slide{
+.insta-testimonial-slider img {
+  width: 100%;
+}
+
+.slider-move .slick-slide {
   margin: 0 10px !important;
-overflow: hidden;
+  overflow: hidden;
 
 }
+/* 
+section{
+  overflow: hidden;
+} */
