@@ -1,5 +1,7 @@
 <?php
 // Load Composer's autoloader
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 require __DIR__ . '/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -23,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'tech.drdiptismilesuite@gmail.com'; 
+        $mail->Username   = 'tech.drdiptismilesuite@gmail.com';
         $mail->Password   = 'riuh qizd knti zqvq'; // Gmail App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
@@ -52,4 +54,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Mailer Error: {$mail->ErrorInfo}";
     }
 }
-?>
